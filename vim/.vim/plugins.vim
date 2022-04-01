@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'SirVer/ultisnips'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -20,16 +21,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
-" tmux
-Plug 'benmills/vimux'
-
 " autocomplete
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " test
-Plug 'tyewang/vimux-jest-test'
-Plug 'janko-m/vim-test'
+Plug 'christoomey/vim-tmux-navigator'
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
@@ -40,6 +37,15 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'prettier/vim-prettier', {'do':'yarn install --frozen-lockfile --production'}
+Plug 'briancollins/vim-jst'
+
+"Laravel
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-projectionist'
+Plug 'noahfrederick/vim-composer'
+Plug 'noahfrederick/vim-laravel'
+Plug 'jwalton512/vim-blade'
 
 " git
 Plug 'tpope/vim-fugitive'

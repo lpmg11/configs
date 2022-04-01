@@ -8,7 +8,7 @@ let g:user_emmet_leader_key=','
 " split resize
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
-
+imap jj <Esc>
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 nnoremap <Leader>/ :noh<CR>
