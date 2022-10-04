@@ -5,6 +5,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 "Plug 'SirVer/ultisnips'
+Plug 'github/copilot.vim'
+Plug 'glench/vim-jinja2-syntax'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -13,6 +17,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'tribela/vim-transparent'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -48,7 +53,7 @@ Plug 'noahfrederick/vim-laravel'
 Plug 'jwalton512/vim-blade'
 
 " git
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
 

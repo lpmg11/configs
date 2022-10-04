@@ -15,6 +15,26 @@ nnoremap <Leader>/ :noh<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>a GVggy<CR>
+
+"  and brackets and quotes 
+
+xnoremap '  di'<Esc>pa'<Esc>
+xnoremap "  di"<Esc>pa"<Esc>
+xnoremap (  di(<Esc>pa)<Esc>
+xnoremap )  di(<Esc>pa)<Esc>
+xnoremap [  di[<Esc>pa]<Esc>
+xnoremap ]  di[<Esc>pa]<Esc>
+xnoremap {  di{<Esc>pa}<Esc>
+xnoremap }  di{<Esc>pa}<Esc>
+xnoremap `  di`<Esc>pa`<Esc>
+xnoremap <  di<<Esc>pa><Esc>
+xnoremap >  di<<Esc>pa><Esc>
+xnoremap /  di</<Esc>pa><Esc>
+
+" copy path to clipboard
+nnoremap <Leader>cp :let @+=expand('%:p')<CR>
+
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
@@ -25,6 +45,7 @@ cnoreabbrev diff Gdiff
 map <Leader>nt :NERDTreeFind<CR>
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
+map <Leader>v ggVG
 
 " tmux navigator
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
@@ -72,7 +93,7 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
 " run current file
-nnoremap <Leader>x :!node %<cr>
+nnoremap <Leader>x :!deno run %<cr>
 
 " Use <c-space> to trigger completion.
 "if &filetype == "javascript" || &filetype == "python"
